@@ -1,0 +1,111 @@
+body{
+    overflow-x: hidden;
+    font-family: "Arimo";
+
+}
+::placeholder{
+/* color:#dbdae3; */
+color: red;
+}
+
+#GetApp {
+    position: relative;
+    background-image: url('/src/assets/pexels-cottonbro-5053835.jpg');
+    background-size: cover; 
+    min-height: 300px;
+}
+
+#GetApp::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+#GetApp > * {
+    position: relative;
+    z-index: 2;
+}
+
+.card{
+    border: none;
+    box-shadow: 0 4px 8px 0px rgba(0, 0, 0, 0.2);
+}
+.correct{
+    color:blueviolet;
+}
+.buttonaccess{
+    background-color: white;
+    box-shadow: 0 4px 8px 0px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    color: blueviolet;
+    font-size: 12px;
+    height: 40px;
+
+}
+
+.seventhplace p{
+    max-width: 600px;
+}
+.ppicture{
+    border-radius: 40%;
+    max-height: 100px;
+    max-width: 100px;
+}
+.reducespacing h5{
+    margin-bottom: 0.2px;
+}
+form{
+    border: none;
+    box-shadow: 0 4px 8px 0px rgba(0, 0, 0, 0.2);
+}
+.signinbutton{
+    background-color: #6578DF;
+}
+.ninthplace .card{
+    height: 60px;
+}
+.appstore{
+    background-color: white;
+    box-shadow: 0 4px 8px 0px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    color: #51A837;
+    font-size: 12px;
+    height: 40px;
+    border-color: #51A837;
+    border-width: medium;
+}
+.tenthplace button{
+    width: 130px;
+}
+.android{
+    background-color: #51A837;
+    box-shadow: 0 4px 8px 0px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    color: white;
+    font-size: 12px;
+    height: 40px;
+ 
+}
+.manholdingphone{
+    max-height: 400px;
+}
+nav h2{
+display: none;
+}
+/* nav{
+    background-color: white;
+} */
+footer h1{
+    display: none;
+}
+#AppBenefits h1{
+    display: none;
+} 
+#AppStatistics h1{
+    display: none;
+}
