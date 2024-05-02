@@ -1,6 +1,6 @@
 body{
     overflow-x: hidden;
-    font-family: "Arimo";
+    font-family: "Schibsted Grotesk";
 
 }
 ::placeholder{
@@ -108,4 +108,7 @@ footer h1{
 } 
 #AppStatistics h1{
     display: none;
+}
+.secondarytext{
+   color: rgba(128, 128, 128, 0.699);
 }
