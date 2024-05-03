@@ -154,7 +154,8 @@ word-spacing: 8px;
 
 }
 .trial{
-    margin-top: -1rem;
+    margin-top: -2.5rem;
+    margin-left: 0.5rem;
 }
 .buttonweb{
     background-color: white;
@@ -163,4 +164,7 @@ word-spacing: 8px;
     color: black;
     font-size: 12px;
     max-width: 80px;
+}
+.msg{
+    height: 150px;
 }
