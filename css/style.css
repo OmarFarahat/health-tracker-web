@@ -1,6 +1,6 @@
 body{
     overflow-x: hidden;
-    font-family: 'Work Sans', Arial, Helvetica, sans-serif, sans-serif;
+    font-family: 'Work Sans', sans-serif, Arial, Helvetica;
 }
 .form-control::-webkit-input-placeholder {
     color: rgba(128, 128, 128, 0.699);
@@ -61,20 +61,15 @@ body{
     font-weight: 500;
     margin-top: 2rem;
     padding-top: 2rem;
-    word-spacing: 5px;
 }
 #AppPlans h4,p{
    font-weight: 500;
 }
 #ActivityGoals h3{
-    word-spacing: 6px;
     font-weight: 550;
 }
 #ActivityGoals p{
     font-weight: 400;
-}
-#GiveFeedback h3{
-    word-spacing: 8px;
 }
 #GiveFeedback button{
     min-height:45px;
@@ -82,9 +77,6 @@ body{
 }
 #OurTeam .card{
     width: 90%;
-}
-#OurTeam h3{
-    word-spacing:3px;
 }
 #OurTeam img{
     margin-top: -2.5rem;
@@ -102,7 +94,19 @@ body{
 }
 #UsersFeedback h5{
     margin-bottom: 0.2px;
-
+}
+nav{
+    background-color: white;
+}
+nav h2{
+    display: none;
+}
+nav button{
+    min-width: 120px;
+    border-width: thick;
+}
+nav a{
+    font-weight: 500;
 }
 .card{
     border: none;
@@ -112,7 +116,7 @@ body{
     color:blueviolet;
 }
 .buttonaccess{
-    background-color: white;
+    background-color: wh ite;
     box-shadow: 0 4px 8px 0px rgba(0, 0, 0, 0.2);
     width: 100%;
     color: blueviolet;
@@ -121,9 +125,6 @@ body{
 }
 .signinbutton{
     background-color: #6578DF;
-}
-.ninthplace .card{
-    height: 60px;
 }
 .appstore{
     background-color: white;
@@ -145,16 +146,6 @@ body{
     max-height: 300px;
     width: 100%;
 }
-nav h2{
-    display: none;
-}
-nav{
-    background-color: white;
-}
-nav button{
-    min-width: 120px;
-    border-width: thick;
-}
 footer h1{
     display: none;
 }
@@ -175,8 +166,5 @@ footer h1{
 }
 .msg{
     height: 150px;
-}
-nav a{
-    font-weight: 500;
 }
 
