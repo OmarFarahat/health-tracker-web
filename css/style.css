@@ -46,7 +46,6 @@ body{
     margin-top: 2rem;
     font-weight: 500;
     text-align: center;
-    word-spacing: 8px;
  } 
  #AppStatistics h3{
     display: none;
@@ -87,6 +86,24 @@ body{
 #OurTeam h3{
     word-spacing:3px;
 }
+#OurTeam img{
+    margin-top: -2.5rem;
+    margin-left: 0.5rem;
+    border-radius: 50%;
+    max-height: 100px;
+    max-width: 100px;
+    object-fit: cover;
+}
+#UsersFeedback img{
+    border-radius: 50%;
+    max-height: 60px;
+    width: 60px;
+    object-fit: cover;
+}
+#UsersFeedback h5{
+    margin-bottom: 0.2px;
+
+}
 .card{
     border: none;
     box-shadow: 0 4px 8px 0px rgba(0, 0, 0, 0.2);
@@ -102,15 +119,6 @@ body{
     font-size: 12px;
     height: 40px;
 }
-.ppicture{
-    border-radius: 50%;
-    max-height: 100px;
-    max-width: 100px;
-    object-fit: cover;
-}
-.reducespacing h5{
-    margin-bottom: 0.2px;
-}
 .signinbutton{
     background-color: #6578DF;
 }
@@ -125,9 +133,6 @@ body{
     height: 40px;
     border-color: #51A837;
     border-width: thin;
-}
-.tenthplace button{
-    width: 130px;
 }
 .android{
     background-color: #51A837;
@@ -154,16 +159,11 @@ footer h1{
     display: none;
 }
 .secondarytext{
-   /* color: rgba(128, 128, 128, 0.699); */
    color: rgba(143, 142, 142, 0.699);
 
 }
 .hyphen{
     color: rgba(128, 128, 128, 0.096);
-}
-.trial{
-    margin-top: -2.5rem;
-    margin-left: 0.5rem;
 }
 .buttonweb{
     background-color: white;
@@ -179,9 +179,4 @@ footer h1{
 nav a{
     font-weight: 500;
 }
-.feedbackpicture{
-    border-radius: 50%;
-    max-height: 60px;
-    width: 60px;
-    object-fit: cover;
-}
+
