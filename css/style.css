@@ -95,11 +95,12 @@ body{
 #UsersFeedback h5{
     margin-bottom: 0.2px;
 }
+#footer{
+    background-color: rgba(0, 0, 0, 0.05);
+    text-align: center;
+}
 nav{
     background-color: white;
-}
-nav h2{
-    display: none;
 }
 nav button{
     min-width: 120px;
@@ -163,8 +164,4 @@ footer h1{
     color: black;
     font-size: 12px;
     max-width: 80px;
-}
-#footer{
-    background-color: rgba(0, 0, 0, 0.05);
-    text-align: center;
 }
