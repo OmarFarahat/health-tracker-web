@@ -43,13 +43,13 @@ h3{
 
 
 
-#hero {
+#getApp {
     background-image: url('/src/assets/pexels-cottonbro-5053835.jpg');
     background-size: cover; 
     min-height: 350px;
     position: relative;
 }
-#hero::before {
+#getApp::before {
     background: var(--coverbackgroundcolor);
     bottom: 0;
     content: "";
@@ -59,20 +59,20 @@ h3{
     top: 0;
     z-index: 1;
 }
-#hero > * {
+#getApp > * {
     position: relative;
     z-index: 2;
 }
 
 
 
-.hero__btn{
+.getApp__btn{
     background-color: var(--greencolor);
     color: var(--herobuttoncolor);
     min-height: 40px;
     min-width: 180px ;
 }
-.hero__h6{
+.getApp__h6{
  color: var(--heroheadingcolor);
  font-weight: 320;
 }
