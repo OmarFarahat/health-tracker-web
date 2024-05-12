@@ -115,15 +115,15 @@ nav a{
 .correct{
     color:blueviolet;
 }
-.buttonaccess{
-    background-color: wh ite;
+.btn--purple{
+    background-color: white;
     box-shadow: 0 4px 8px 0px rgba(0, 0, 0, 0.2);
     color: blueviolet;
     font-size: 12px;
     height: 40px;
     width: 100%;
 }
-.signinbutton{
+.btn--blue{
     background-color: #6578DF;
 }
 .appstore{
@@ -135,7 +135,7 @@ nav a{
     font-size: 12px;
     height: 40px;
 }
-.android{
+.btn--green{
     background-color: #51A837;
     box-shadow: 0 4px 8px 0px rgba(0, 0, 0, 0.2);
     color: white;
@@ -146,9 +146,6 @@ nav a{
     max-height: 300px;
     width: 100%;
 }
-footer h1{
-    display: none;
-}
 .secondarytext{
    color: rgba(143, 142, 142, 0.699);
 
@@ -156,7 +153,7 @@ footer h1{
 .hyphen{  
       color: rgba(128, 128, 128, 0.096);
 }
-.buttonweb{
+.btn--white{
     background-color: white;
     box-shadow: 0 4px 8px 0px rgba(0, 0, 0, 0.2);
     color: black;
