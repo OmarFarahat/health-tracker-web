@@ -1,18 +1,56 @@
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+input,button,textarea{
+    font: inherit;
+}
+:root{
+    --FF: 'Work Sans', sans-serif, Arial, Helvetica;
+    --HFW: 500px;
+
+    /* Colors */
+    --secondarytextcolor:rgba(143, 142, 142, 0.699);
+    --greencolor: #51A837;
+    --purplecolor:blueviolet;
+    --bluecolor: #6578DF;
+    --coverbackgroundcolor: rgba(0, 0, 0, 0.5);
+    --footerbackgroundcolor: rgba(0, 0, 0, 0.05);
+    --herobuttoncolor:whitesmoke;
+    --heroheadingcolor:rgba(245, 245, 245, 0.884);
+    --mainbackgroundcolor:white;
+    --mainfontcolor:black;
+    --fadedeffectcolor: rgba(128, 128, 128, 0.096);
+
+    /* Border */
+    --boxshadowcolor: rgba(0, 0, 0, 0.2);
+}
 body{
-    font-family: 'Work Sans', sans-serif, Arial, Helvetica;
+    font-family: var(--FF);
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 .form-control::-webkit-input-placeholder {
     color: rgba(128, 128, 128, 0.699);
 }
-#GetApp {
+h3{
+    font-weight: 500px;
+}
+
+
+
+
+#hero {
     background-image: url('/src/assets/pexels-cottonbro-5053835.jpg');
     background-size: cover; 
     min-height: 350px;
     position: relative;
 }
-#GetApp::before {
-    background: rgba(0, 0, 0, 0.5);
+#hero::before {
+    background: var(--coverbackgroundcolor);
     bottom: 0;
     content: "";
     left: 0;
@@ -21,64 +59,64 @@ body{
     top: 0;
     z-index: 1;
 }
-#GetApp > * {
+#hero > * {
     position: relative;
     z-index: 2;
 }
-#GetApp button{
-    background-color: #51A837;
-    color: whitesmoke;
+
+
+
+.hero__btn{
+    background-color: var(--greencolor);
+    color: var(--herobuttoncolor);
     min-height: 40px;
     min-width: 180px ;
 }
-#GetApp h6{
- color: rgba(245, 245, 245, 0.884);
+.hero__h6{
+ color: var(--heroheadingcolor);
  font-weight: 320;
 }
-#GetApp p{
-    color: rgba(250, 250, 250, 0.856);
-}
-#GiveFeedback form{
+.contact__form{
     border: none;
-    box-shadow: 0 4px 8px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px 0px var(--boxshadowcolor);
 }
-#AppBenefits h3{
-    font-weight: 500;
+.appbenefits__h3{
     margin-top: 2rem;
     text-align: center;
  } 
- #AppStatistics h3{
-    display: none;
-}
- #AppImages h3{
-   font-stretch: ultra-expanded;
-   font-weight: 500;
+ .appimages__h3{
    margin-top: 5rem;
    text-align: center;
 }
-#AppPlans h3{
-    font-weight: 500;
+.appPlans__h3{
     margin-top: 2rem;
     padding-top: 2rem;
     text-align: center;
 }
-#AppPlans h4,p{
+.appPlans_h4{
    font-weight: 500;
 }
-#ActivityGoals h3{
+.appPlans_p{
+    font-weight: 500;
+ }
+.activitygoals__h3{
     font-weight: 550;
 }
-#ActivityGoals p{
+.activitygoals__p{
     font-weight: 400;
 }
-#GiveFeedback button{
+.activitygoals__img{
+    max-height: 300px;
+    width: 100%;
+}
+.contact__btn{
     min-height:45px;
     min-width: 120px;
 }
-#OurTeam .card{
+.ourteam__card{
     width: 90%;
 }
-#OurTeam img{
+.ourteam__img{
     border-radius: 50%;
     margin-left: 0.5rem;
     margin-top: -2.5rem;
@@ -86,78 +124,92 @@ body{
     max-width: 100px;
     object-fit: cover;
 }
-#UsersFeedback img{
+.usersfeedback__img{
     border-radius: 50%;
     max-height: 60px;
     object-fit: cover;
     width: 60px;
 }
-#UsersFeedback h5{
+.usersfeedback__h5{
     margin-bottom: 0.2px;
 }
+
+
+/* Footer */ 
 #footer{
-    background-color: rgba(0, 0, 0, 0.05);
+    background-color: var(--footerbackgroundcolor);
+    text-align: center;
 }
-nav{
-    background-color: white;
+
+
+/* header */
+.header{
+    background-color: var(--mainbackgroundcolor);
 }
-nav button{
-    border-width: thick;
+.header__btn{
+    border-width: thin;
     min-width: 120px;
 }
-nav a{
+.header__a{
     font-weight: 500;
 }
-.card{
-    border: none;
-    box-shadow: 0 4px 8px 0px rgba(0, 0, 0, 0.2);
-}
-.correct{
-    color:blueviolet;
-}
+
+
+/* buttons */
+
 .btn--purple{
-    background-color: white;
-    box-shadow: 0 4px 8px 0px rgba(0, 0, 0, 0.2);
-    color: blueviolet;
+    background-color: var(--mainbackgroundcolor);
+    box-shadow: 0 4px 8px 0px var(--boxshadowcolor);
+    color: var(--purplecolor);
     font-size: 12px;
     height: 40px;
     width: 100%;
 }
 .btn--blue{
-    background-color: #6578DF;
+    background-color: var(--bluecolor);
 }
-.appstore{
-    background-color: white;
-    border-color: #51A837;
+.btn--appstore{
+    background-color: var(--mainbackgroundcolor);
+    border-color: var(--greencolor);
     border-width: thin;
-    box-shadow: 0 4px 8px 0px rgba(0, 0, 0, 0.2);
-    color: #51A837;
+    box-shadow: 0 4px 8px 0px var(--boxshadowcolor);
+    color: var(--greencolor);
     font-size: 12px;
     height: 40px;
 }
 .btn--green{
-    background-color: #51A837;
-    box-shadow: 0 4px 8px 0px rgba(0, 0, 0, 0.2);
-    color: white;
+    background-color: var(--greencolor);
+    box-shadow: 0 4px 8px 0px var(--boxshadowcolor);
+    color: var(--mainbackgroundcolor);
     font-size: 12px;
     height: 40px;
 }
-.manholdingphone{
-    max-height: 300px;
-    width: 100%;
-}
-.secondarytext{
-   color: rgba(143, 142, 142, 0.699);
-
-}
-.hyphen{  
-      color: rgba(128, 128, 128, 0.096);
-}
 .btn--white{
-    background-color: white;
-    box-shadow: 0 4px 8px 0px rgba(0, 0, 0, 0.2);
-    color: black;
+    background-color: var(--mainbackgroundcolor);
+    box-shadow: 0 4px 8px 0px var(--boxshadowcolor);
+    color: var(--mainfontcolor);
     font-size: 12px;
     max-width: 80px;
     width: 100%;
+}
+
+
+
+.card{
+    border: none;
+    box-shadow: 0 4px 8px 0px var(--boxshadowcolor);
+}
+.correct{
+    color:var(--purplecolor);
+}
+
+.secondarytext{
+   color:var(--secondarytextcolor);
+}
+.hyphen{  
+      color: var(--fadedeffectcolor);
+}
+.offscreen{
+    position: absolute;
+    left: -1000px;
 }
