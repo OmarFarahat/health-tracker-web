@@ -99,6 +99,10 @@ h3{
 .appPlans_p{
     font-weight: 500;
  }
+ .appPlans__li{
+    text-decoration: none;
+    border: none;
+ }
 .activitygoals__h3{
     font-weight: 550;
 }

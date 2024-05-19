@@ -30,10 +30,10 @@
         <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
         <ul class=" navbar-nav ms-auto mb-2 mb-lg-0 justify-content-center">
           <li class="nav-item">
-            <a class="nav-link active text-body " aria-current="page" href="#">Home</a>
+            <a class="nav-link active text-body " aria-current="page" href="#" tabindex="0" >Home</a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle text-body " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Live Demo</a>
+            <a class="nav-link dropdown-toggle text-body " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" tabindex="0">Live Demo</a>
             <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="#">Action</a></li>
               <li><a class="dropdown-item" href="#">Another action</a></li>
@@ -53,7 +53,7 @@
             </ul>
           </li>
         </ul>
-          <button class="btn header__btn btn-sm btn-outline-primary ms-auto me-3 fw-bolder" type="button">Buy Now</button>
+          <button class="btn header__btn btn-sm btn-outline-primary ms-auto me-3 fw-bolder" type="button" tabindex="0">Buy Now</button>
 </div>
 </nav>
 </header>
@@ -63,8 +63,8 @@
     <h6 class="getApp__h6 mt-2 mb-4">It is created to watch your health</h6>
     <h3 class="getApp__h3 mb-4  "> Health Tracker App </h3>
     <form class="d-flex mt-3 mb-5 ms-2 me-2">
-      <input class="form-control me-2 secondarytext" type="email" placeholder="E-mail Address" aria-label="Write your Email">
-      <button type="button" class="btn getApp__btn fw-bold ">Get App</button>
+      <input class="form-control me-2 secondarytext" type="email" placeholder="E-mail Address" aria-label="Write your Email" tabindex="0">
+      <button type="button" class="btn getApp__btn fw-bold " tabindex="0" >Get App</button>
     </form>
   </section>
 
@@ -243,7 +243,7 @@
 </section>
 
 
-<section id="appPlans">
+<!-- <section id="appPlans">
   <div class="bg-light mt-5">
     <div class="container-fluid">
     <h3 class="appPlans__h3">Start using our app today</h3>
@@ -344,6 +344,48 @@
   </div>
   </div>
   </div>
+</section> -->
+<section id="appPlans">
+  <div class="bg-light mt-5">
+    <div class="container-fluid">
+      <h3 class="appPlans__h3">Start using our app today</h3>
+      <p class="appPlans_p secondarytext text-center fw-normal fs-6 mt-3 mb-5">Being active is important to our health, but how much or what kind of activity do you need?</p>
+      <div class="row">
+        <div class="card-group d-flex justify-content-center mb-5 flex-wrap ms-md-5 ms-sm-4">
+          <div class="col-md-4 col-lg-3 col-sm-5 col-10 me-5 mb-5 mb-sm-2 ms-5 ms-sm-0">
+            <div class="card h-100">
+              <div class="card-body ms-2">
+                <h4 class="appPlans__h4 card-title mb-4 mt-3">Starter Plan</h4>
+                <p class="card-text secondarytext fw-medium small ms-2 mb-4">For simple users</p>
+                <ul class="list-group list-group-flush">
+                  <li class="appPlans__li list-group-item secondarytext mb-3"><i class="fa fa-check fa-xl correct " aria-hidden="true"></i> <span class=" ms-3">HEART POINTS </span></li>
+                  <li class="appPlans__li list-group-item secondarytext mb-3"><i class="fa fa-check fa-xl correct " aria-hidden="true"></i> <span class=" ms-3">MOVE MINUTES </span></li>
+                  <li class="appPlans__li list-group-item secondarytext mb-3"><i class="fa fa-times fa-xl correct " aria-hidden="true"></i><span class=" ms-3"> FITNESS ASSESSMENT </span></li>
+                  <li class="appPlans__li list-group-item secondarytext mb-3"><i class="fa fa-times fa-xl correct " aria-hidden="true"></i> <span class=" ms-3">NUTRITIONAL SUCCESS</span></li>
+                </ul>
+                <button type="button" class="btn btn--purple fw-bold mt-2 mb-4" tabindex="0">Get Access Now</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-lg-3 col-sm-5 col-10 me-5 mb-5 mb-sm-2 ms-5 ms-sm-0">
+            <div class="card h-100">
+              <div class="card-body ms-2">
+                <h4 class="appPlans__h4 card-title mb-4 mt-3">User Plan</h4>
+                <p class="card-text secondarytext fw-medium small ms-2 mb-4">For athletes involved in intense programs</p>
+                <ul class="list-group list-group-flush">
+                  <li class="appPlans__li list-group-item secondarytext mb-3"><i class="fa fa-check fa-xl correct " aria-hidden="true"></i> <span class=" ms-3">HEART POINTS </span></li>
+                  <li class="appPlans__li list-group-item secondarytext mb-3"><i class="fa fa-check fa-xl correct " aria-hidden="true"></i> <span class=" ms-3">MOVE MINUTES </span></li>
+                  <li class="appPlans__li list-group-item secondarytext mb-3"><i class="fa fa-check fa-xl correct " aria-hidden="true"></i><span class=" ms-3"> FITNESS ASSESSMENT </span></li>
+                  <li class="appPlans__li list-group-item secondarytext mb-3"><i class="fa fa-check fa-xl correct " aria-hidden="true"></i> <span class=" ms-3">NUTRITIONAL SUCCESS</span></li>
+                </ul>
+                <button type="button" class="btn btn--purple fw-bold mt-2 mb-4" tabindex="0">Get Access Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 
 
@@ -389,7 +431,7 @@
               <h5 class="card-title ms-2">Jason Doe</h5>
               <h6 class="ms-2">Programmer</h6>
               <p class="card-text secondarytext ms-2">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-              <button type="button" class="btn btn--white fw-bold mt-2 mb-2 ms-2">Website</button>
+              <button type="button" class="btn btn--white fw-bold mt-2 mb-2 ms-2" tabindex="0">Website</button>
             </div>
           </div>
         </div>
@@ -400,7 +442,7 @@
               <h5 class="card-title ms-2">Amanda Swoon</h5>
               <h6 class="card-text ms-2">Designer</h6>
               <p class="card-text secondarytext ms-2">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-              <button type="button" class="btn btn--white fw-bold mt-2 mb-2 ms-2">Website</button>
+              <button type="button" class="btn btn--white fw-bold mt-2 mb-2 ms-2" tabindex="0">Website</button>
             </div>
           </div>
         </div>
@@ -411,7 +453,7 @@
               <h5 class="card-title ms-2">Andrew Smith</h5>
               <h6 class="ms-2">Support</h6>
               <p class="card-text secondarytext ms-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-              <button type="button" class="btn btn--white fw-bold mt-2 mb-2 ms-2">Website</button>
+              <button type="button" class="btn btn--white fw-bold mt-2 mb-2 ms-2" tabindex="0">Website</button>
             </div>
           </div>
         </div>
@@ -422,7 +464,7 @@
               <h5 class="card-title ms-2">Jane Olsen</h5>
               <h6 class="ms-2">Jane Olsen</h6>
               <p class="card-text secondarytext ms-2">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-              <button type="button" class="btn btn--white fw-bold mt-2 mb-2 ms-2">Website</button>
+              <button type="button" class="btn btn--white fw-bold mt-2 mb-2 ms-2" tabindex="0">Website</button>
             </div>
           </div>
         </div>
@@ -444,25 +486,25 @@
     <h5 class="mt-4">Send us a Message</h5>
   <div class="col-10">
     <label for="inputEmail4" class="form-label"></label>
-    <input type="email" class="form-control secondarytext card h-100" id="inputEmail4" placeholder="E-mail Address" required>
+    <input type="email" tabindex="0" class="form-control secondarytext card h-100" id="inputEmail4" placeholder="E-mail Address" required>
   </div>
   <div class="col-5 mb-3 ">
     <label for="name" class="form-label"></label>
-    <input type="text" class="form-control card h-100 " id="name" placeholder="Name" required autocomplete="on">
+    <input type="text" class="form-control card h-100 " tabindex="0" id="name" placeholder="Name" required autocomplete="on">
   </div>
   <div class="col-5 mb-3 ">
     <label for="phonenumber" class="form-label"></label>
-    <input type="tel" class="form-control card h-100" id="phonenumber" placeholder="Your Phone" required minlength="11" maxlength="11">
+    <input type="tel" class="form-control card h-100" id="phonenumber"  tabindex="0" placeholder="Your Phone" required minlength="11" maxlength="11">
   </div>
   <div class="col-10 mb-3">
     <div class="form-floating">
-      <textarea class="form-control card h-100" placeholder="Message" id="floatingTextarea2" rows="5" required></textarea>
+      <textarea class="form-control card h-100" tabindex="0" placeholder="Message" id="floatingTextarea2" rows="5" required></textarea>
       <label for="floatingTextarea2" class="secondarytext "> Message</label>
     </div>
     </div>
 
   <div class="col-12 mb-4">
-    <button type="submit" class="btn contact__btn btn-primary btn--blue  fw-bold">Contact Us</button>
+    <button type="submit" class="btn contact__btn btn-primary btn--blue  fw-bold" tabindex="0">Contact Us</button>
   </div>
 </form>
 </div>
@@ -476,13 +518,13 @@
     <h3> Get our app for Android and iPhone </h3>
       <div class="row d-flex justify-content-center mt-4">
         <div class="col-lg-5 col-12 col-xl-4">
-          <button type="button" class="btn btn--appstore fw-bold mt-2 mb-2 fw-bold w-100">
+          <button type="button" class="btn btn--appstore fw-bold mt-2 mb-2 fw-bold w-100" tabindex="0">
             <i class="fa fa-apple me-2" aria-hidden="true"></i>
            App Store
           </button>
         </div>
         <div class="col-lg-5 col-12 col-xl-4 ms-2">
-          <button type="button" class="btn btn--green fw-bold mt-2 mb-2 w-100">
+          <button type="button" class="btn btn--green fw-bold mt-2 mb-2 w-100" tabindex="0">
             <i class="fa fa-android " aria-hidden="true"></i>
             Google Play
           </button>
