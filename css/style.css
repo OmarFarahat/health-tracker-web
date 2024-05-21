@@ -20,7 +20,7 @@ input,button,textarea{
 
     /* Colors */
     /* --secondarytextcolor:rgba(143, 142, 142, 0.699); */
-    --secondarytextcolor: rgba(55, 55, 55, 0.699);
+    --secondarytextcolor: rgba(100, 100, 100, 0.699);
 
     --greencolor: #51A837;
     --purplecolor:blueviolet;
@@ -115,8 +115,8 @@ h3{
     font-weight: 550;
 }
 .activitygoals__p{
-    /* font-weight: 400; */
-    color: var(--secondarytextcolor);
+    font-weight: 400;
+    /* color: var(--secondarytextcolor); */
 }
 .activitygoals__img{
     max-height: 300px;
