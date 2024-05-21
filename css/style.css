@@ -8,12 +8,20 @@
 input,button,textarea{
     font: inherit;
 }
+:focus{
+    color: var(--purplecolor);
+    box-shadow: 0 0 1px 2px var(--purplecolor);
+    outline: 0;
+    text-decoration: underline;
+}
 :root{
     --FF: 'Work Sans', sans-serif, Arial, Helvetica;
     --HFW: 500px;
 
     /* Colors */
-    --secondarytextcolor:rgba(143, 142, 142, 0.699);
+    /* --secondarytextcolor:rgba(143, 142, 142, 0.699); */
+    --secondarytextcolor: rgba(55, 55, 55, 0.699);
+
     --greencolor: #51A837;
     --purplecolor:blueviolet;
     --bluecolor: #6578DF;
@@ -107,7 +115,8 @@ h3{
     font-weight: 550;
 }
 .activitygoals__p{
-    font-weight: 400;
+    /* font-weight: 400; */
+    color: var(--secondarytextcolor);
 }
 .activitygoals__img{
     max-height: 300px;
