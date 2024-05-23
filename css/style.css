@@ -222,7 +222,7 @@ h3{
 .hyphen{  
       color: var(--fadedeffectcolor);
 }
-.offscreen{
+.offscreen-caption{
     position: absolute;
     left: -1000px;
 }
